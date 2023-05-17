@@ -1,7 +1,7 @@
-'use stirct';
+'use strict';
 
 
-module.exports = (error, request, response, next) => {
+const errorHandler = (error, request, response, next) => {
   const errorMessage = typeof(error) === 'string' ? error : error.message;
   response.status(500).send ({
     error: 500,
@@ -13,3 +13,4 @@ module.exports = (error, request, response, next) => {
   });
 };
 
+module.exports = errorHandler;

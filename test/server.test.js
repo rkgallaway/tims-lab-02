@@ -38,7 +38,7 @@ describe('Server', () => {
 
 
   test('validate name parameter', async () => {
-    let response = await mockRequest.get('/person/name');
+    let response = await mockRequest.get('/person/stuff');
     expect(response.status).toEqual(500);
 
     response = await mockRequest.get('/person/name');

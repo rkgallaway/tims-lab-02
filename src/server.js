@@ -2,7 +2,7 @@
 
 const express= require ('express');
 const cors = require ('cors');
-cosnt validator = require('./middleware/validator');
+const validator = require('./middleware/validator');
 const logger = require('./middleware/logger')
 
 
